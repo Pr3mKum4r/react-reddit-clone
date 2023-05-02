@@ -1,0 +1,17 @@
+.login-container{
+    margin:40px;
+}
+
+.login-container a{
+    color: rgb(0, 102, 255);
+}
+
+.login-container h1{
+    font-weight: 650;
+    font-size: larger;
+}
+
+.login-container p{
+    font-size: small;
+    margin-top: 8px;
+}

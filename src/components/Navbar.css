@@ -1,0 +1,19 @@
+.navbar{
+    display: flex;
+    height: 45px;
+    background-color: #ffffff;
+    padding: 30px 17px;
+    width: 100%;
+}
+
+.logo-container{
+    display: flex;
+    align-items: center;
+    margin-right: 2px;
+}
+
+.btn-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

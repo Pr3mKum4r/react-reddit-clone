@@ -1,0 +1,57 @@
+.about-channel-container{
+    position: sticky;
+    width: 30%;
+    margin-top: 20px;
+}
+
+.about-header{
+    display: flex;
+    background-color: #008cff;
+    color: white;
+    padding: 10px;
+    border-radius: 5px 5px 0 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about-content{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+.description{
+    padding: 10px;
+}
+
+.origin-date{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+}
+
+.member-count{
+    display: flex;
+}
+
+.total-members{
+    width: 40%;
+    padding: 10px;
+}
+
+.online-members{
+    width: 60%;
+    padding: 10px;
+}
+
+.online{
+    display: flex;
+    align-items: center;
+}
+
+@media only screen and (max-width: 950px) {
+    .about-channel-container{
+        display: none;
+    }
+}
