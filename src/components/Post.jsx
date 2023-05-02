@@ -13,6 +13,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import upArrow from '/assets/up-arrow.png';
 import downArrow from '/assets/down-arrow.png';
+import microsoftBuy from '/assets/microsoftBuy.png';
 
 
 const Post = () => {
@@ -23,7 +24,7 @@ const Post = () => {
       <div className="post-options">
         <Button
           bgColor={"grey.10"}
-          height={"30px"}
+          height={{base: '20px', md: '30px'}}
           borderRadius={"20px"}
           marginRight={"10px"}
         >
@@ -32,40 +33,40 @@ const Post = () => {
             style={{ color: "#008cff" }}
             height={"40px"}
           />
-          <Text color={"blue.400"} fontWeight={700} ml={"10px"}>
+          <Text color={"blue.400"} fontWeight={700} ml={"10px"} fontSize={{base: '9pt', md: '12pt'}}>
             Hot
           </Text>
         </Button>
         <Button
           bgColor={"grey.10"}
-          height={"30px"}
+          height={{base: '20px', md: '30px'}}
           borderRadius={"20px"}
           marginRight={"10px"}
         >
           <FontAwesomeIcon icon={faSun} style={{ color: "#949494" }} />
-          <Text color={"gray"} fontWeight={700} ml={"10px"}>
+          <Text color={"gray"} fontWeight={700} ml={"10px"} fontSize={{base: '9pt', md: '12pt'}}>
             New
           </Text>
         </Button>
         <Button
           bgColor={"grey.10"}
-          height={"30px"}
+          height={{base: '20px', md: '30px'}}
           borderRadius={"20px"}
           marginRight={"10px"}
         >
           <FontAwesomeIcon icon={faRankingStar} style={{ color: "#949494" }} />
-          <Text color={"gray"} fontWeight={700} ml={"10px"}>
+          <Text color={"gray"} fontWeight={700} ml={"10px"} fontSize={{base: '9pt', md: '12pt'}}>
             Top
           </Text>
         </Button>
         <Button
           bgColor={"grey.10"}
-          height={"30px"}
+          height={{base: '20px', md: '30px'}}
           borderRadius={"20px"}
           marginRight={"10px"}
         >
           <FontAwesomeIcon icon={faChartLine} style={{ color: "#949494" }} />
-          <Text color={"gray"} fontWeight={700} ml={"10px"}>
+          <Text color={"gray"} fontWeight={700} ml={"10px"} fontSize={{base: '9pt', md: '12pt'}}>
             Rising
           </Text>
         </Button>
@@ -97,10 +98,9 @@ const Post = () => {
         <div className="post-content-container">
           <Stack spacing={1} p="10px">
             <Stack direction="row" spacing={0.6} align="center" fontSize="9pt">
-              <Text fontWeight={"600"}>r/premkumar</Text>
-              <Text color={"grey"}>. Posted by u/pr3mkum4r 6 hours ago</Text>
+              <Text color={"grey"}>Posted by u/pr3mkum4r 6 hours ago</Text>
             </Stack>
-            <Stack direction="row" spacing={0.6} align={"center"}>
+            <Stack direction={{base: 'column', md: 'row'}} spacing={0.6} align={{md: 'center'}}>
               <Text fontSize={"12pt"} fontWeight={650} mr={"5px"}>
                 How to clone reddit using react
               </Text>
@@ -184,10 +184,9 @@ const Post = () => {
         <div className="post-content-container">
           <Stack spacing={1} p="10px">
             <Stack direction="row" spacing={0.6} align="center" fontSize="9pt">
-              <Text fontWeight={"600"}>r/premkumar</Text>
-              <Text color={"grey"}>. Posted by u/Hybr1dPr3m 9 hours ago</Text>
+              <Text color={"grey"}>Posted by u/Hybr1dPr3m 9 hours ago</Text>
             </Stack>
-            <Stack direction="row" spacing={0.6} align={"center"}>
+            <Stack direction={{base: 'column', md: 'row'}} spacing={0.6} align={{md: 'center'}}>
               <Text fontSize={"12pt"} fontWeight={650} mr={"5px"}>
                 Microsoft Acquires Nuance Communications for $19.7 Billion
               </Text>
@@ -201,11 +200,12 @@ const Post = () => {
                 align="center"
                 ml={"2px"}
                 _hover={{ bgColor: "blue.500", opacity: 0.8 }}
+                minWidth={'80px'}
               >
                 Discussion
               </Button>
             </Stack>
-            <Image src='/assets/microsoftBuy.png'/>
+            <Image src={microsoftBuy}/>
             <Text fontSize={"10pt"}>
               Microsoft has announced its acquisition of Nuance Communications,
               a leading provider of speech recognition and artificial
@@ -276,12 +276,11 @@ const Post = () => {
         <div className="post-content-container">
           <Stack spacing={1} p="10px">
             <Stack direction="row" spacing={0.6} align="center" fontSize="9pt">
-              <Text fontWeight={"600"}>r/premkumar</Text>
               <Text color={"grey"}>
-                . Posted by u/hybridgamer410 13 hours ago
+                Posted by u/hybridgamer410 13 hours ago
               </Text>
             </Stack>
-            <Stack direction="row" spacing={0.6} align={"center"}>
+            <Stack direction={{base: 'column', md: 'row'}} spacing={0.6} align={{md: 'center'}}>
               <Text fontSize={"12pt"} fontWeight={650} mr={"5px"}>
                 Why Next.js is the Future of Web Development
               </Text>
@@ -295,6 +294,7 @@ const Post = () => {
                 align="center"
                 ml={"2px"}
                 _hover={{ bgColor: "blue.500", opacity: 0.8 }}
+                minWidth={'80px'}
               >
                 Discussion
               </Button>
