@@ -1,6 +1,6 @@
 import { Button, Image, Text } from "@chakra-ui/react";
 import "./Header.css";
-import channelLogo from '../../public/assets/channelLogo.jpeg';
+import channelLogo from '/assets/channelLogo.jpeg';
 
 const Header = () => {
   return (

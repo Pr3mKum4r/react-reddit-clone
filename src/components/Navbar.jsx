@@ -18,8 +18,8 @@ import {
   MenuOptionGroup,
   MenuDivider,
 } from "@chakra-ui/react";
-import redditLogo from '../../public/assets/redditLogo.png';
-import redditLogoText from '../../public/assets/redditLogoText';
+import redditLogo from '/assets/redditLogo.png';
+import redditLogoText from '/assets/redditLogoText.png';
 
 const Navbar = () => {
   const [isLogin, setIsLogin] = useState(false);

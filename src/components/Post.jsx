@@ -11,8 +11,8 @@ import {
   faRankingStar,
   faChartLine,
 } from "@fortawesome/free-solid-svg-icons";
-import upArrow from '../../public/assets/up-arrow.png';
-import downArrow from '../../public/assets/down-arrow.png';
+import upArrow from '/assets/up-arrow.png';
+import downArrow from '/assets/down-arrow.png';
 
 
 const Post = () => {

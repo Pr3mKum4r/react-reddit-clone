@@ -1,5 +1,5 @@
 import { useDisclosure, Modal, ModalOverlay, ModalContent, ModalCloseButton, ModalBody, Image } from "@chakra-ui/react";
-import redditAppQR from '../../public/assets/redditGetApp.jpg';
+import redditAppQR from '/assets/redditGetApp.jpg';
 
 const GetAppModal = (props) => {
   const { isOpen, onOpen, onClose } = useDisclosure();

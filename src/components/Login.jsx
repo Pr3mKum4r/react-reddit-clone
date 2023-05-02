@@ -1,7 +1,7 @@
 import { Button, Divider, Image, InputGroup, Input } from "@chakra-ui/react";
 import "./Login.css";
-import googleLogo from '../../public/assets/googleLogo.png';
-import appleLogo from '../../public/assets/appleLogo.png';
+import googleLogo from '/assets/googleLogo.png';
+import appleLogo from '/assets/appleLogo.png';
 
 
 const Login = () => {
