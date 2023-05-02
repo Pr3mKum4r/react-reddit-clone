@@ -1,5 +1,6 @@
 import { Button, Image, Text } from "@chakra-ui/react";
 import "./Header.css";
+import channelLogo from '../../public/assets/channelLogo.jpeg';
 
 const Header = () => {
   return (
@@ -8,7 +9,7 @@ const Header = () => {
       <div className="details-container">
         <div className="channel-details">
           <Image
-            src="/assets/channelLogo.jpeg"
+            src={channelLogo}
             height={"75px"}
             width={"75px"}
             borderRadius={"40px"}

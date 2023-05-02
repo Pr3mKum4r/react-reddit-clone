@@ -7,7 +7,7 @@ import { faUser } from "@fortawesome/free-regular-svg-icons";
 import { faBullhorn, faArrowRightToBracket } from "@fortawesome/free-solid-svg-icons";
 import LoginModal from "./LoginModal";
 import { useState } from "react";
-import GetAppModal from "./getAppModal";
+import GetAppModal from "./GetAppModal";
 import {
   Menu,
   MenuButton,
@@ -18,6 +18,8 @@ import {
   MenuOptionGroup,
   MenuDivider,
 } from "@chakra-ui/react";
+import redditLogo from '../../public/assets/redditLogo.png';
+import redditLogoText from '../../public/assets/redditLogoText';
 
 const Navbar = () => {
   const [isLogin, setIsLogin] = useState(false);
@@ -26,9 +28,9 @@ const Navbar = () => {
     <Center width={"100%"} display={"block"}>
       <div className="navbar">
         <div className="logo-container">
-          <Image src="/assets/redditLogo.png" height={"30px"} />
+          <Image src={redditLogo} height={"30px"} />
           <Image
-            src="/assets/redditLogoText.png"
+            src={redditLogoText}
             height={"20px"}
             marginLeft={"10px"}
             marginRight={"10px"}

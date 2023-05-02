@@ -11,6 +11,9 @@ import {
   faRankingStar,
   faChartLine,
 } from "@fortawesome/free-solid-svg-icons";
+import upArrow from '../../public/assets/up-arrow.png';
+import downArrow from '../../public/assets/down-arrow.png';
+
 
 const Post = () => {
   const [count, setCount] = useState(0);
@@ -77,7 +80,7 @@ const Post = () => {
               setCount(count + 1);
             }}
           >
-            <Image src="/assets/up-arrow.png" />
+            <Image src={upArrow} />
           </Button>
           <p className="count">{count}</p>
           <Button
@@ -88,7 +91,7 @@ const Post = () => {
               setCount(count - 1);
             }}
           >
-            <Image src="/assets/down-arrow.png" />
+            <Image src={downArrow} />
           </Button>
         </div>
         <div className="post-content-container">
@@ -164,7 +167,7 @@ const Post = () => {
               setCount(count + 1);
             }}
           >
-            <Image src="/assets/up-arrow.png" />
+            <Image src={upArrow} />
           </Button>
           <p className="count">{count}</p>
           <Button
@@ -175,7 +178,7 @@ const Post = () => {
               setCount(count - 1);
             }}
           >
-            <Image src="/assets/down-arrow.png" />
+            <Image src={downArrow} />
           </Button>
         </div>
         <div className="post-content-container">
@@ -256,7 +259,7 @@ const Post = () => {
               setCount2(count2 + 1);
             }}
           >
-            <Image src="/assets/up-arrow.png" />
+            <Image src={upArrow} />
           </Button>
           <p className="count">{count2}</p>
           <Button
@@ -267,7 +270,7 @@ const Post = () => {
               setCount2(count2 - 1);
             }}
           >
-            <Image src="/assets/down-arrow.png" />
+            <Image src={downArrow} />
           </Button>
         </div>
         <div className="post-content-container">

@@ -1,5 +1,8 @@
 import { Button, Divider, Image, InputGroup, Input } from "@chakra-ui/react";
 import "./Login.css";
+import googleLogo from '../../public/assets/googleLogo.png';
+import appleLogo from '../../public/assets/appleLogo.png';
+
 
 const Login = () => {
   return (
@@ -23,7 +26,7 @@ const Login = () => {
         _hover={{ bgColor: "gray.50" }}
       >
         <Image
-          src="/assets/googleLogo.png"
+          src={googleLogo}
           height={"20px"}
           ml={"2px"}
           mr={"20px"}
@@ -43,7 +46,7 @@ const Login = () => {
         _hover={{ bgColor: "gray.50" }}
       >
         <Image
-          src="/assets/appleLogo.png"
+          src={appleLogo}
           height={"20px"}
           ml={"0px"}
           mr={"25px"}
